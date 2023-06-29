@@ -5,3 +5,71 @@
 	margin: 0;
 	padding: 0;
 }
+
+// VARIABLES
+
+$main-font: 'Roboto', sans-serif;
+$cursive-font: 'Cormorant Garamond', serif;
+$title-font: 'Nunito Sans', sans-serif;
+$subtitle-font: 'Marck Script', cursive;
+$main-color: #fed136;
+$light-color: #fff;
+
+// font-family: 'Cormorant Garamond', serif;
+// font-family: 'Marck Script', cursive;
+// font-family: 'Nunito Sans', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+// HEADER SECTION
+
+.splash {
+	position: relative;
+	height: 100vh;
+	background-image: url('../img/header-small.jpg');
+	background-repeat: no-repeat;
+	background-position: 80% 0;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
+	&__box {
+		text-align: center;
+		color: white;
+		z-index: 1;
+
+		&-subtitle {
+			font-size: 32px;
+			font-family: $subtitle-font;
+		}
+
+		&-title {
+			font-size: 40px;
+			font-family: $title-font;
+			font-weight: 700;
+			padding: 5px 10px;
+			text-transform: uppercase;
+		}
+
+		&-btn {
+			text-transform: uppercase;
+			border: none;
+			border-radius: 5px;
+			background-color: $main-color;
+			padding: 12px 24px;
+			margin-top: 10px;
+			font-family: $main-font;
+			font-weight: 700;
+			color: $light-color;
+		}
+	}
+}

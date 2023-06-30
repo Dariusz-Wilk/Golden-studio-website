@@ -6,7 +6,7 @@
 	padding: 0;
 }
 
-// VARIABLES
+// VARIABLES & GLOBAL STYLES
 
 $main-font: 'Roboto', sans-serif;
 $cursive-font: 'Cormorant Garamond', serif;
@@ -14,11 +14,30 @@ $title-font: 'Nunito Sans', sans-serif;
 $subtitle-font: 'Marck Script', cursive;
 $main-color: #fed136;
 $light-color: #fff;
+$grey-color: #aaaaaa;
 
-// font-family: 'Cormorant Garamond', serif;
-// font-family: 'Marck Script', cursive;
-// font-family: 'Nunito Sans', sans-serif;
-// font-family: 'Roboto', sans-serif;
+.container {
+	max-width: 1140px;
+	padding: 50px 25px;
+	margin: 0 auto;
+}
+
+.section-title {
+	text-transform: uppercase;
+	font-family: $main-font;
+	font-size: 36px;
+	font-weight: 900;
+	text-align: center;
+}
+
+.section-subtitle {
+	font-family: $cursive-font;
+	color: $grey-color;
+	font-size: 22px;
+	text-align: center;
+	font-weight: 700;
+	font-style: italic;
+}
 
 // NAV SECTION
 
@@ -105,6 +124,52 @@ $light-color: #fff;
 			font-family: $main-font;
 			font-weight: 700;
 			color: $light-color;
+		}
+	}
+}
+
+//SERVICES SECTION
+
+.services {
+	&__cards {
+		margin-top: 60px;
+	}
+
+	&__card {
+		margin-bottom: 25px;
+		padding: 10px 5px;
+		text-align: center;
+
+		&-icon-box {
+			position: relative;
+			height: 60px;
+			width: 60px;
+			border-radius: 50%;
+			border: 3px solid $main-color;
+			margin: 0 auto 15px;
+		}
+
+		&-icon {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 32px;
+			color: $main-color;
+			padding: 18px;
+		}
+
+		&-title {
+			font-weight: 700;
+			font-size: 26px;
+		}
+
+		&-text {
+			color: $grey-color;
+			margin-top: 14px;
+			font-size: 20px;
+			font-weight: 700;
+			font-family: $cursive-font;
 		}
 	}
 }

@@ -15,6 +15,7 @@ $subtitle-font: 'Marck Script', cursive;
 $main-color: #fed136;
 $light-color: #fff;
 $grey-color: #aaaaaa;
+$footer-text-color: #5b5a5a;
 
 .container {
 	max-width: 1140px;
@@ -95,7 +96,6 @@ $grey-color: #aaaaaa;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	&__box {
 		text-align: center;
 		color: white;
@@ -213,5 +213,31 @@ $grey-color: #aaaaaa;
 			font-style: italic;
 			font-weight: 700;
 		}
+	}
+}
+
+// FOOTER SECTION
+
+.footer {
+	&__text {
+		text-align: center;
+		font-weight: 700;
+		color: $footer-text-color;
+	}
+
+	&__icons {
+		text-align: center;
+	}
+
+	&__icon {
+		display: inline-block;
+		height: 30px;
+		width: 30px;
+		// padding: 10px;
+		margin: 0 5px;
+		background-color: rgb(28, 28, 28);
+		border-radius: 50%;
+		color: $light-color;
+		line-height: 30px;
 	}
 }

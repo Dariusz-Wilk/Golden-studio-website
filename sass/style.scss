@@ -57,6 +57,7 @@ $footer-text-color: #5b5a5a;
 
 	&__container {
 		padding: 10px 25px;
+		justify-content: space-between;
 
 		.navbar-nav {
 			.nav-link {
@@ -239,5 +240,102 @@ $footer-text-color: #5b5a5a;
 		border-radius: 50%;
 		color: $light-color;
 		line-height: 30px;
+		cursor: pointer;
 	}
+}
+
+// MEDIA QUERIES
+
+@media (min-width: 768px) {
+	.section-title {
+		font-size: 44px;
+	}
+	.section-subtitle {
+		font-size: 26px;
+	}
+
+	.nav {
+		&__logo {
+			font-size: 28px;
+		}
+		.navbar-collapse {
+			justify-content: flex-end;
+		}
+
+		&__container {
+			padding: 18px 30px;
+			justify-content: space-between;
+
+			.navbar-nav {
+				.nav-link {
+					background-color: transparent;
+					padding: 5px 20px;
+
+					&:hover {
+						color: $main-color;
+					}
+				}
+			}
+		}
+	}
+
+	.splash {
+		&__box {
+			&-subtitle {
+				font-size: 50px;
+			}
+			&-title {
+				font-size: 60px;
+			}
+
+			&-btn {
+				font-size: 18px;
+				padding: 15px 30px;
+			}
+		}
+	}
+
+	.services {
+		&__cards {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		&__card {
+			margin-bottom: 15px;
+			padding: 10px 27px;
+			flex: 0 0 50%;
+		}
+	}
+
+	.portfolio {
+		&__cards {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		&__card {
+			flex: 0 0 48%;
+			margin: 40px 0;
+		}
+	}
+
+	.footer {
+		&__text {
+			font-size: 18px;
+		}
+		&__icon {
+			height: 35px;
+			width: 35px;
+			line-height: 35px;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
 }

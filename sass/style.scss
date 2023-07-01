@@ -15,11 +15,11 @@ $subtitle-font: 'Marck Script', cursive;
 $main-color: #fed136;
 $light-color: #fff;
 $grey-color: #aaaaaa;
-$footer-text-color: #5b5a5a;
+$footer-text-color: #737373;
 
 .container {
 	max-width: 1140px;
-	padding: 50px 25px;
+	padding: 90px 25px;
 	margin: 0 auto;
 }
 
@@ -53,6 +53,10 @@ $footer-text-color: #5b5a5a;
 		color: $main-color;
 		font-family: $subtitle-font;
 		font-size: 24px;
+
+		&:hover {
+			color: $main-color;
+		}
 	}
 
 	&__container {
@@ -64,10 +68,12 @@ $footer-text-color: #5b5a5a;
 				color: $light-color;
 				display: inline-block;
 				margin-left: auto;
-				width: 40%;
+				width: 50%;
 				text-align: right;
-				padding: 5px 30px;
+				padding: 5px 27px;
 				background-color: rgba(0, 0, 0, 0.4);
+				font-size: 14px;
+				text-transform: uppercase;
 
 				&:hover {
 					color: $main-color;
@@ -98,6 +104,7 @@ $footer-text-color: #5b5a5a;
 	justify-content: center;
 	align-items: center;
 	&__box {
+		margin-top: 100px;
 		text-align: center;
 		color: white;
 		z-index: 1;
@@ -186,7 +193,7 @@ $footer-text-color: #5b5a5a;
 	&__card {
 		margin: 60px 0;
 		&-img-box {
-			height: 200px;
+			height: 300px;
 		}
 
 		&-img {
@@ -220,6 +227,9 @@ $footer-text-color: #5b5a5a;
 // FOOTER SECTION
 
 .footer {
+	&__container {
+		padding: 45px 25px;
+	}
 	&__text {
 		text-align: center;
 		font-weight: 700;
@@ -323,9 +333,6 @@ $footer-text-color: #5b5a5a;
 	}
 
 	.footer {
-		&__text {
-			font-size: 18px;
-		}
 		&__icon {
 			height: 35px;
 			width: 35px;
@@ -335,7 +342,100 @@ $footer-text-color: #5b5a5a;
 }
 
 @media (min-width: 992px) {
-}
+	.section-title {
+		font-size: 50px;
+	}
 
-@media (min-width: 1200px) {
+	.section-subtitle {
+		font-size: 22px;
+	}
+
+	.nav {
+		&__logo {
+			font-size: 34px;
+		}
+
+		&__container {
+			.navbar-nav {
+				.nav-link {
+					padding: 5px 25px;
+
+					&:hover {
+						color: $main-color;
+					}
+				}
+			}
+		}
+	}
+
+	.splash {
+		&__box {
+			&-subtitle {
+				font-size: 60px;
+			}
+			&-title {
+				font-size: 76px;
+			}
+
+			&-btn {
+				font-size: 22px;
+				padding: 20px 40px;
+			}
+		}
+	}
+
+	.services {
+		&__card {
+			margin-bottom: 15px;
+			padding: 10px 27px;
+			flex: 0 0 33.333%;
+		}
+
+		&__card-icon-box {
+			width: 75px;
+			height: 75px;
+			border-width: 4px;
+		}
+
+		&__card-title {
+			font-size: 22px;
+			margin: 9px 0;
+		}
+
+		&__card-text {
+			font-size: 18px;
+			line-height: 1.2;
+		}
+	}
+
+	.portfolio {
+		&__card {
+			flex: 0 0 31%;
+			margin: 30px 0;
+		}
+	}
+
+	.footer {
+		&__container {
+			position: relative;
+		}
+		&__text {
+			text-align: left;
+			margin: 0;
+		}
+
+		&__icons {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		&__icon {
+			height: 45px;
+			width: 45px;
+			line-height: 45px;
+			font-size: 20px;
+		}
+	}
 }
